@@ -1,0 +1,279 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins;
+}
+
+body{
+background:linear-gradient(135deg,#ffe6f2,#fff7fb);
+color:#333;
+}
+
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+padding:20px 10%;
+align-items:center;
+}
+
+.logo{
+font-family:'Dancing Script';
+font-size:30px;
+color:#ff4fa3;
+}
+
+
+/* FLOWER NAVIGATION */
+
+.flower-nav{
+display:flex;
+gap:15px;
+list-style:none;
+}
+
+.flower-nav a{
+
+text-decoration:none;
+padding:8px 18px;
+
+background:#fff;
+border-radius:25px;
+
+border:2px dashed #ffb6c1;
+
+color:#444;
+
+transition:0.3s;
+
+position:relative;
+
+}
+
+/* hover effect */
+
+.flower-nav a:hover{
+
+background:#ffe6f2;
+transform:translateY(-3px);
+
+box-shadow:0 6px 15px rgba(255,105,180,0.3);
+
+}
+
+/* flower icon on hover */
+
+.flower-nav a::after{
+
+content:"🌸";
+position:absolute;
+top:-8px;
+right:-8px;
+
+opacity:0;
+transition:0.3s;
+
+}
+
+.flower-nav a:hover::after{
+
+opacity:1;
+
+}
+
+
+/* HERO */
+
+.hero{
+text-align:center;
+padding:150px 20px;
+}
+
+.hero h1{
+font-family:'Dancing Script';
+font-size:65px;
+color:#ff4fa3;
+}
+
+
+/* FLOWER BUTTON */
+
+.flower-btn{
+
+display:inline-block;
+margin:15px;
+padding:12px 30px;
+
+border-radius:30px;
+text-decoration:none;
+
+background:linear-gradient(45deg,#ff8fcf,#ffb6e6);
+color:white;
+
+transition:0.3s;
+position:relative;
+
+}
+
+.flower-btn:hover{
+
+transform:translateY(-5px) scale(1.05);
+box-shadow:0 10px 25px rgba(255,105,180,0.4);
+
+}
+
+.flower-btn::after{
+
+content:"🌸";
+position:absolute;
+top:-10px;
+right:-10px;
+opacity:0;
+
+}
+
+.flower-btn:hover::after{
+
+opacity:1;
+
+}
+
+
+/* SECTIONS */
+
+section{
+
+width:75%;
+margin:150px auto;
+text-align:center;
+
+}
+
+h2{
+
+font-family:'Dancing Script';
+font-size:42px;
+margin-bottom:30px;
+color:#ff4fa3;
+
+}
+
+
+/* FLOWER DIVIDER */
+
+.flower-divider{
+
+width:100%;
+height:60px;
+
+background-image:
+url("https://i.imgur.com/8Km9tLL.png");
+
+background-repeat:repeat-x;
+background-size:40px;
+
+opacity:0.7;
+
+}
+
+
+/* SKILLS */
+
+.skill-container{
+
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+
+}
+
+.skill-card{
+
+background:white;
+padding:15px 30px;
+
+border-radius:25px;
+border:2px dashed #ffb6c1;
+
+transition:0.4s;
+
+}
+
+.skill-card:hover{
+
+transform:translateY(-6px);
+box-shadow:0 10px 20px rgba(255,105,180,0.3);
+
+}
+
+
+/* PROJECTS */
+
+.projects{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+
+}
+
+.card{
+
+background:white;
+padding:25px;
+
+border-radius:25px;
+border:2px dashed #ffb6c1;
+
+position:relative;
+transition:0.4s;
+
+}
+
+.card:hover{
+
+transform:translateY(-12px);
+box-shadow:0 12px 25px rgba(255,105,180,0.35);
+
+}
+
+.card::before{
+
+content:"✨";
+position:absolute;
+top:10px;
+right:10px;
+opacity:0;
+
+}
+
+.card:hover::before{
+
+opacity:1;
+animation:sparkle 1s infinite alternate;
+
+}
+
+@keyframes sparkle{
+
+0%{transform:scale(1)}
+100%{transform:scale(1.4)}
+
+}
+
+
+/* EDUCATION */
+
+.edu-box{
+
+background:white;
+padding:30px;
+
+border-radius:20px;
+border:2px dashed #ffb6c1;
+
+}
